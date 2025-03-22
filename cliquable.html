@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte electronique Boolky</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef; /* Fond de la page en gris clair */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .container {
+            background-color: #ffffff; /* Fond blanc pour le conteneur */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+       
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px; /* Espace entre l'image et le bouton */
+        }
+
+        .profile-button, .withdraw-button {
+            background-color: #004085; /* Bleu foncé */
+            color: rgb(236, 207, 207);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            width: 120px; /* Largeur spécifique des boutons */
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .profile-button:hover, .withdraw-button:hover {
+            background-color: #002752; /* Bleu encore plus foncé */
+        }
+
+        .balance-display {
+            font-size: 24px;
+            font-weight: bold;
+            color: #594ae6;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .balance-display span {
+            display: block;
+        }
+
+        .withdrawal-section {
+            margin-bottom: 20px;
+        }
+
+        .amount-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .withdrawal-method {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .transaction-summary {
+            margin-bottom: 20px;
+        }
+
+        .transaction-summary h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .transaction-item {
+            border-bottom: 1px solid #e9ecef;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+        .solde{
+            color: #0056b3;
+        }
+        .tr{
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="titre">Compte electronique Boolky</h1>
+        </header>
+
+        <div class="profile-section">
+            <img src=img/profil.jpeg alt="Profil Utilisateur" class="profile-pic">
+            <a href="Profil22.html" class="profile-button">Voir Profil</a>
+        </div>
+
+        <div class="balance-display">
+            <span> <div class="solde">Solde :</div>860,850.00 FCFA</span>
+            <span> <div class="solde">Solde :</div>$1,324.38</span> <!-- Affichage du solde en dollars -->
+        </div>
+
+        <section class="withdrawal-section">
+            <h2>Montant à Retirer</h2>
+            <input type="number" placeholder="Entrez le montant" class="amount-input">
+
+            <h2>Méthode de Retrait</h2>
+            <select class="withdrawal-method">
+                <option value="mtn">MTN Money</option>
+                <option value="tron">Tron</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="uba">Banque</option>
+                <option value="moov">Moov Money</option>
+                <option value="orange">Orange Money</option>
+                <option value="usdt">Wave</option>
+            </select>
+        </section>
+
+        <section class="transaction-summary">
+            <h2>Historique des Transactions</h2>
+            <div class="transaction-item">
+                <span>22/03/2025</span>
+                <span class="tr">+785,850 FCFA</span>
+            </div>
+            <div class="transaction-item">
+                <span>22/03/2025</span>
+                <span class="tr">+75,000.00 FCFA</span>
+            </div>
+        </section>
+
+        <a href="C:\Users\Sergio\Documents\Compte-lectronique-\Compte_non_active1.html" class="withdraw-button">Confirmer Retrait</a>
+    </div>
+</body>
+</html>
